@@ -2,7 +2,7 @@ name: pull_request-workflow
 on: pull_request
 
 jobs:
-  pull_request-job:
+  pull-request-job:
     runs-on: ubuntu-latest
     steps:
       - name: step 1
