@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Step 1
         run: |
-          echo "Issues Number: '${{ github.event }}'"
+          echo "Issues Number: '${{ github }}'"
