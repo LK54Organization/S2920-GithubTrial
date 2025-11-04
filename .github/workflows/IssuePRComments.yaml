@@ -10,4 +10,5 @@ jobs:
     steps:
       - name: Step 1
         run: |
-          echo "Issues Number: '${{ toJson(github.event) }}'"
+          echo "Issues Number: '${{ toJson(github.event.issue.number) }}'"
+          echo "Comment: '${{ toJson(github.event.comment.body) }}'"
