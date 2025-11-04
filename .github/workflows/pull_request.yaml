@@ -11,5 +11,5 @@ jobs:
         run: echo "This is a pull request workflow"
       - name: step 2
         run: |
-          echo "This is pull_request workflow - step 2"
+          echo '${{ toJson(github) }}'
           echo "Running multiple commands"
