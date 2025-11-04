@@ -1,6 +1,6 @@
 name: issue-comment
 on:
-  issues_comment:
+  issue_comment:
     types: [created]
 
 
