@@ -1,0 +1,13 @@
+name: pull_request-workflow-hmw
+on: 
+  pull_request:
+    types: [opened]
+
+jobs:
+  pull-request-jobHMW:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1
+        run: |
+          echo '${{ toJson(github) }}'
+          echo "Running multiple commands"
