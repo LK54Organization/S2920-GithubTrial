@@ -1,0 +1,13 @@
+name: issue-comment
+on:
+  issues_comment:
+    types: [created]
+
+
+jobs:
+  issue-pr-comments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: |
+          echo "Issues Number: '${{ github.event }}'"
