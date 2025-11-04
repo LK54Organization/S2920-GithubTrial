@@ -11,5 +11,5 @@ jobs:
         run: echo "This is an issue workflow"
       - name: step 2
         run: |
-          echo  '${{ toJson(github) }}'
+          echo  '${{ toJson(github.event) }}'
           echo "Running multiple commands"
