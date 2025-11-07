@@ -25,7 +25,7 @@ jobs :
     environment: dev
     steps:
     - name: Post a message in a channel
-      uses: slackapi/slack-github-actions@v2.1.1
+      uses: slackapi/slack-github-action@v2.1.1
       with:
         webhook: ${{ secrets.WEBHOOK_URL }}
         webhook-type: incoming-webhook
